@@ -1,0 +1,47 @@
+DESCRIPTION >
+    Endpoint to query link click data with filtering capabilities
+
+NODE link_clicks_query
+SQL >
+    %
+    SELECT
+        timestamp,
+        profileUsername,
+        profileUserId,
+        linkId,
+        linkTitle,
+        linkUrl,
+        userAgent,
+        referrer,
+        location_country,
+        location_region,
+        location_city,
+        location_latitude,
+        location_longitude
+    FROM link_clicks
+    WHERE 1=1
+        {% if defined(profileUserId) %}
+        AND profileUserId = {{String(profileUserId)}}
+        {% end %}
+        {% if defined(linkId) %}
+        AND linkId = {{String(linkId)}}
+        {% end %}
+        {% if defined(start_date) %}
+        AND timestamp >= {{DateTime(start_date)}}
+        {% else %}
+        AND timestamp >= now() - INTERVAL 30 DAY
+        {% end %}
+        {% if defined(end_date) %}
+        AND timestamp <= {{DateTime(end_date)}}
+        {% end %}
+        {% if defined(country) %}
+        AND location_country = {{String(country)}}
+        {% end %}
+    ORDER BY timestamp DESC
+    {% if defined(limit) %}
+    LIMIT {{Int32(limit, 100)}}
+    {% else %}
+    LIMIT 100
+    {% end %}
+
+TYPE endpoint

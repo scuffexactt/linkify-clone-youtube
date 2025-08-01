@@ -1,0 +1,14 @@
+{
+    "host": "https://api.europe-west2.gcp.tinybird.co",
+    "id": "5a9e8277-dbd3-44c5-939b-4e90b4d63962",
+    "name": "linkify_154367",
+    "scope": "user",
+    "token": "p.eyJ1IjogIjVhOWU4Mjc3LWRiZDMtNDRjNS05MzliLTRlOTBiNGQ2Mzk2MiIsICJpZCI6ICI4NjU2OWI2Ny1kZGM4LTQ0MWItOWYxMS05NGUwZDA3NjlhNDkiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.MH-7dkfJJZI_WHq0znrFpc8b2O_B__DiygN9tzeGq-s",
+    "tokens": {
+        "https://api.europe-west2.gcp.tinybird.co": "p.eyJ1IjogIjVhOWU4Mjc3LWRiZDMtNDRjNS05MzliLTRlOTBiNGQ2Mzk2MiIsICJpZCI6ICI4NjU2OWI2Ny1kZGM4LTQ0MWItOWYxMS05NGUwZDA3NjlhNDkiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.MH-7dkfJJZI_WHq0znrFpc8b2O_B__DiygN9tzeGq-s"
+    },
+    "user_email": "scuffexactt@icloud.com",
+    "user_id": "9251790a-4bc5-485e-bf18-1c6ba268b8da",
+    "user_token": "p.eyJ1IjogIjkyNTE3OTBhLTRiYzUtNDg1ZS1iZjE4LTFjNmJhMjY4YjhkYSIsICJpZCI6ICJmYmM3ZjBjNS0zMmQ4LTQyYzYtOWVlZC1iOTFiY2M1NzU3MGQiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.jiLYAWi7L3n17Z12prgI4jNzWG5u0DGdgUdNELMFFaU",
+    "version": "0.0.1.dev213"
+}
